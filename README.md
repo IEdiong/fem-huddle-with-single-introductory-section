@@ -55,6 +55,8 @@ I learnted to use fontawesome icons properly.
 
 - [Html5 Doctor](http://html5doctor.com/) - This helped me learn more about accessibility in HTML5 and how to use semantic tags. I really liked the way it's conveyed on this site.
 
+- [Deque University](https://dequeuniversity.com/rules/axe/4.3/link-name?application=axeAPI) - This helped me know how to make my link name accessible. I really like how it explains what the matter is and how to fix it.
+
 ## Author
 
 - Frontend Mentor - [@IEdiong](https://www.frontendmentor.io/profile/IEdiong)
