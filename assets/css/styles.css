@@ -12,11 +12,15 @@
   padding: 0;
 }
 
+
+/* TODO: change all the font unit to the best for
+   TODO: accessibility. eg ch, rem */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #ffffff;
   background: var(--violet) url('../../images/bg-mobile.svg') no-repeat;
+  background-size: contain;
   min-height: 100vh;
   line-height: 1.5;
 }
@@ -28,6 +32,10 @@ h2 {
 
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -54,7 +62,7 @@ img {
 }
 
 .hero {
-    margin-top: 46px;
+    margin-top: 45px;
     text-align: center;
 }
 
@@ -93,19 +101,20 @@ img {
 .social__link {
     color: #ffffff;
     border: 1px solid #ffffff;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-inline: 0.5em;
+    margin-inline: 7px;
     border-radius: 50%;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 906px) {
 
     body {
         background: var(--violet) url('../../images/bg-desktop.svg') no-repeat;
+        font-size: 1.15rem;
     }
 
     .container {
@@ -114,27 +123,30 @@ img {
     }
 
     .logo {
-        height: w0px;
+        height: 52px;
         margin-top: 60px;
     }
 
     .hero {
         display: flex;
         align-items: center;
-        column-gap: 2em;
+        column-gap: 50px;
+        margin-top: 78px;
     }
 
     .hero__image {
-        width: 60%;
+        width: 58%;
         margin-bottom: 0;
-        align-self: baseline;
     }
 
     .hero__content {
-        width: 40%;
+        width: 42%;
         text-align: left;
+        align-self: start;
+        margin-top: 40px;
     }
-
+/* TODO: use clamp() to start at (1.8rem) a good font-size 
+TODO: and increase gradually up to (2.5rem) the current font-size. */
     .hero__title {
         font-size: 2.5rem;
     }
@@ -142,18 +154,34 @@ img {
     img {
         display: block;
     }
-    /* .hero__body {
-
-    } */
 
     .hero__cta {
         text-align: center;
+        margin-inline: 0;
+        margin-top: 20px;
+        transition: all 0.5s cubic-bezier(.39,.51,.06,.99)
+    }
+
+    .hero__cta:focus,
+    .hero__cta:hover {
+        color: #ffffff;
+        background-color: var(--soft-magenta);
     }
 
     .social__links {
         text-align: right;
         justify-content: end;
-        margin-top: 2.5em;
+        margin-top: 15px;
+    }
+
+    .social__link {
+        transition: all 0.5s cubic-bezier(.39,.51,.06,.99)
+    }
+
+    .social__link:focus,
+    .social__link:hover {
+        color: var(--soft-magenta);
+        border-color: var(--soft-magenta);
     }
 }
 
