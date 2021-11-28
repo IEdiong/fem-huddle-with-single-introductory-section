@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site](https://iediong.github.io/fem-huddle-with-single-introductory-section/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-single-introductory-section-for-huddle-landing-page-49uYdorvD)
+- Live Site URL: [live site URL](https://iediong.github.io/fem-huddle-with-single-introductory-section/)
 
 ## My process
 
